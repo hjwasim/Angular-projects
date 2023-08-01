@@ -1,0 +1,6 @@
+<div class="container">
+  <h2>Search the things!</h2>
+  <input #searchQuery type="text" (input)="onSearchUpdated(searchQuery.value)" class="input-box"/>
+  <button class="btn">Submit</button>
+  <p>{{data$ | async}}</p>
+</div>
